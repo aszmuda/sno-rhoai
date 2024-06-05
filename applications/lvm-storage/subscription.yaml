@@ -5,7 +5,7 @@ metadata:
   annotations:
     argocd.argoproj.io/sync-wave: "1"
 spec:
-  channel: 4.15-stable
+  channel: stable-4.15
   installPlanApproval: Automatic
   name: lvms-operator
   source: redhat-operators
