@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="8cc64480-0edc-4940-96b8-441c9d229ab6" name="Changes" comment="Initial commit">
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app-of-apps/dev-app-of-apps.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app-of-apps/dev/lvm-storage-application.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/applications/lvm-storage/kustomization.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/applications/lvm-storage/lvm-cluster.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/applications/lvm-storage/namespace.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/applications/lvm-storage/operator-group.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/applications/lvm-storage/subscription.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/applications/openshift-gitops-operator/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/applications/openshift-gitops-operator/instance/base/kustomization.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/applications/openshift-gitops-operator/instance/base/openshift-gitops.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/applications/openshift-gitops-operator/instance/components/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/applications/openshift-gitops-operator/instance/components/annotation-resource-tracking/kustomization.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/applications/openshift-gitops-operator/instance/components/annotation-resource-tracking/patch-resource-tracking.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/applications/openshift-gitops-operator/instance/components/application-controller-cluster-admin/kustomization.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/applications/openshift-gitops-operator/instance/components/application-controller-cluster-admin/rolebinding.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/applications/openshift-gitops-operator/instance/components/edge-termination/kustomization.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/applications/openshift-gitops-operator/instance/components/edge-termination/patch-edge-termination.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/applications/openshift-gitops-operator/instance/components/enable-notifications/kustomization.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/applications/openshift-gitops-operator/instance/components/enable-notifications/patch-enable-notifications.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/applications/openshift-gitops-operator/instance/components/enable-status-badge/kustomization.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/applications/openshift-gitops-operator/instance/components/enable-status-badge/patch-enable-status-badge.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/applications/openshift-gitops-operator/instance/components/gitops-admins/gitops-admins-group.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/applications/openshift-gitops-operator/instance/components/gitops-admins/kustomization.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/applications/openshift-gitops-operator/instance/components/gitops-admins/patch-rbac.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/applications/openshift-gitops-operator/instance/components/health-check-applications/kustomization.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/applications/openshift-gitops-operator/instance/components/health-check-applications/patch-application-health-check.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/applications/openshift-gitops-operator/instance/components/health-check-odf/kustomization.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/applications/openshift-gitops-operator/instance/components/health-check-odf/patch-storagesystem-health-check.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/applications/openshift-gitops-operator/instance/components/health-check-olm/kustomization.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/applications/openshift-gitops-operator/instance/components/health-check-olm/patch-installplan-health-check.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/applications/openshift-gitops-operator/instance/components/health-check-olm/patch-subscription-health-check.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/applications/openshift-gitops-operator/instance/components/health-check-openshift-builds/kustomization.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/applications/openshift-gitops-operator/instance/components/health-check-openshift-builds/patch-build-health-check.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/applications/openshift-gitops-operator/instance/components/health-check-openshift-builds/patch-imagestream-health-check.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/applications/openshift-gitops-operator/instance/components/kustomize-build-enable-helm/kustomization.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/applications/openshift-gitops-operator/instance/components/kustomize-build-enable-helm/patch-enable-helm.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/applications/openshift-gitops-operator/instance/components/kustomize-build-policy-generator/kustomization.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/applications/openshift-gitops-operator/instance/components/kustomize-build-policy-generator/patch-enable-policy-generator.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/applications/openshift-gitops-operator/instance/overlays/default/kustomization.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/applications/openshift-gitops-operator/operator/base/kustomization.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/applications/openshift-gitops-operator/operator/base/subscription.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/applications/openshift-gitops-operator/operator/components/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/applications/openshift-gitops-operator/operator/components/enable-console-plugin/console-plugin-job.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/applications/openshift-gitops-operator/operator/components/enable-console-plugin/console-plugin-job.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/applications/openshift-gitops-operator/operator/components/enable-console-plugin/kustomization.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/applications/openshift-gitops-operator/operator/components/openshift-gitops-operator/kustomization.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/applications/openshift-gitops-operator/operator/components/openshift-gitops-operator/namespace.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/applications/openshift-gitops-operator/operator/components/openshift-gitops-operator/operatorgroup.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/applications/openshift-gitops-operator/operator/overlays/latest/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/applications/openshift-gitops-operator/operator/overlays/latest/kustomization.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/applications/openshift-gitops-operator/operator/overlays/latest/patch-subscription.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bootstrap/bootstrap.sh" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <excluded-from-favorite>
+      <branch-storage>
+        <map>
+          <entry type="LOCAL">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$" source="master" />
+              </list>
+            </value>
+          </entry>
+        </map>
+      </branch-storage>
+    </excluded-from-favorite>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;aszmuda&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;git@github.com:aszmuda/sno-rhoai.git&quot;,
+    &quot;accountId&quot;: &quot;17c3617d-bfae-4342-a70e-aa507de62f44&quot;
+  }
+}</component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
+  <component name="NamedScopeManager">
+    <scope name="gitops" pattern="file[sno-rhoai]:*/&amp;&amp;!ext:*/" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
+  <component name="ProjectId" id="2hOtAIIteaERygcQxVAULXU2Bxo" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/aszmuda/repos/local/sno-rhoai/applications/openshift-gitops-operator/instance/components&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Problems&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2850575&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/applications/openshift-gitops-operator/instance/components" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/applications/lvm-storage" />
+      <recent name="$PROJECT_DIR$/applications/lvm-storage/operator" />
+      <recent name="$PROJECT_DIR$/applications" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/bootstrap" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.17011.79" />
+        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-IU-241.17011.79" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8cc64480-0edc-4940-96b8-441c9d229ab6" name="Changes" comment="" />
+      <created>1717476806514</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1717476806514</updated>
+      <workItem from="1717476807524" duration="8597000" />
+      <workItem from="1717540644733" duration="18188000" />
+      <workItem from="1717566621213" duration="153000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="CUSTOM_BOOLEAN_PROPERTIES">
+                <map>
+                  <entry key="Show.Git.Branches" value="true" />
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$" />
+    </ignored-roots>
+    <MESSAGE value="Initial commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initial commit" />
+  </component>
+</project>
