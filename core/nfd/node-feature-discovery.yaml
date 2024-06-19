@@ -2,6 +2,8 @@ kind: NodeFeatureDiscovery
 apiVersion: nfd.openshift.io/v1
 metadata:
   name: nfd-instance
+  annotations:
+    argocd.argoproj.io/sync-wave: "5"
 spec:
   customConfig:
     configData: |
