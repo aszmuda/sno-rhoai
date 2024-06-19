@@ -17,4 +17,4 @@ spec:
       maxWaitInQueue: 0s
   storage: 
     pvc:
-      claim: ''
+      claim: 'image-registry-storage'
