@@ -5,5 +5,5 @@ resources:
   - namespace.yaml
   - subscription.yaml
   - operator-group.yaml
-  - node-feature-discovery.yaml
+  - ../../node-feature-discovery.yaml
 
