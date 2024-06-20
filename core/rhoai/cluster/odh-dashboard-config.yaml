@@ -1,0 +1,80 @@
+apiVersion: opendatahub.io/v1alpha
+kind: OdhDashboardConfig
+metadata:
+  annotations:
+    internal.config.kubernetes.io/previousKinds: OdhDashboardConfig
+    internal.config.kubernetes.io/previousNames: odh-dashboard-config
+    internal.config.kubernetes.io/previousNamespaces: default
+  name: odh-dashboard-config
+  namespace: redhat-ods-applications
+  labels:
+    app.kubernetes.io/part-of: rhods-dashboard
+    app.opendatahub.io/rhods-dashboard: 'true'
+spec:
+  dashboardConfig:
+    enablement: true
+    disableDistributedWorkloads: false
+    disableProjects: false
+    disableBiasMetrics: false
+    disableSupport: false
+    disablePipelines: false
+    disableProjectSharing: false
+    disableModelServing: false
+    disableKServe: false
+    disableAcceleratorProfiles: false
+    disableCustomServingRuntimes: false
+    disableModelMesh: false
+    disableKServeAuth: false
+    disableISVBadges: false
+    disableInfo: false
+    disableClusterManager: false
+    disablePerformanceMetrics: false
+    disableBYONImageStream: false
+    disableModelRegistry: true
+    disableTracking: false
+  groupsConfig:
+    adminGroups: rhods-admins
+    allowedGroups: 'system:authenticated'
+  modelServerSizes:
+    - name: Small
+      resources:
+        requests:
+          cpu: '1'
+          memory: 4Gi
+    - name: Medium
+      resources:
+        requests:
+          cpu: '4'
+          memory: 8Gi
+    - name: Large
+      resources:
+        requests:
+          cpu: '6'
+          memory: 16Gi
+  notebookController:
+    enabled: true
+    notebookNamespace: rhods-notebooks
+    pvcSize: 20Gi
+  notebookSizes:
+    - name: Small
+      resources:
+        requests:
+          cpu: '1'
+          memory: 8Gi
+    - name: Medium
+      resources:
+        requests:
+          cpu: '3'
+          memory: 24Gi
+    - name: Large
+      resources:
+        requests:
+          cpu: '7'
+          memory: 56Gi
+    - name: X Large
+      resources:
+        requests:
+          cpu: '15'
+          memory: 120Gi
+  templateDisablement: []
+  templateOrder: []
