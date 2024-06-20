@@ -3,8 +3,6 @@ kind: Subscription
 metadata:
   name: nfd
   namespace: openshift-nfd
-  annotations:
-    argocd.argoproj.io/sync-wave: "1"
 spec:
   channel: stable
   installPlanApproval: Automatic

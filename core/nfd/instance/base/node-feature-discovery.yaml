@@ -3,8 +3,6 @@ apiVersion: nfd.openshift.io/v1
 metadata:
   name: nfd-instance
   namespace: openshift-nfd
-  annotations:
-    argocd.argoproj.io/sync-wave: "5"
 spec:
   instance: ''
   operand:
