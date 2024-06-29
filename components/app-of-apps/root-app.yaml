@@ -10,9 +10,7 @@ spec:
     server: 'https://kubernetes.default.svc'
   project: default
   source:
-    path: applicationsets
-    directory:
-      include: "*.yaml"
+    path: components/applicationsets
     repoURL: https://github.com/aszmuda/sno-rhoai.git
     targetRevision: main
   syncPolicy:
