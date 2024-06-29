@@ -5,7 +5,7 @@ metadata:
   namespace: openshift-gitops
 spec:
   resourceHealthChecks:
-  - argoproj.io/Application:
+  - argoproj.io/v1alpha1/Application:
       health.lua: |
         hs = {}
         hs.status = "Progressing"
