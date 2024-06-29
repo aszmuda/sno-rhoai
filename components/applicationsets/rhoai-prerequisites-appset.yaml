@@ -1,18 +1,22 @@
 apiVersion: argoproj.io/v1alpha1
 kind: ApplicationSet
 metadata:
-  name: cluster
+  name: rhoai-prerequisites
   namespace: openshift-gitops
 spec:
   generators:
-    - git:
-        repoURL: https://github.com/aszmuda/sno-rhoai
-        revision: main
-        directories:
-          - path: core/*
+    - list:
+        elements:
+          - appName: openshift-gitops-operator
+          - appName: nfd
+          - appName: nvidia-gpu
+          - appName: openshift-servicemesh
+          - appName: serverless-operator
   template:
     metadata:
-      name: '{{path.basename}}'
+      name: "{{appName}}"
+      annotations:
+        argocd.argoproj.io/sync-wave: "1"
     spec:
       project: default
       syncPolicy:
@@ -28,6 +32,6 @@ spec:
       source:
         repoURL: https://github.com/aszmuda/sno-rhoai
         targetRevision: main
-        path: '{{path}}'
+        path: "core/{{appName}}"
       destination:
         server: https://kubernetes.default.svc

@@ -1,0 +1,33 @@
+apiVersion: argoproj.io/v1alpha1
+kind: ApplicationSet
+metadata:
+  name: rhoai
+  namespace: openshift-gitops
+spec:
+  generators:
+    - list:
+        elements:
+          - appName: rhoai
+  template:
+    metadata:
+      name: "{{appName}}"
+      annotations:
+        argocd.argoproj.io/sync-wave: "2"
+    spec:
+      project: default
+      syncPolicy:
+        automated:
+          prune: true
+          selfHeal: true
+        retry:
+          limit: 15
+          backoff:
+            duration: 15s
+            factor: 2
+            maxDuration: 5m
+      source:
+        repoURL: https://github.com/aszmuda/sno-rhoai
+        targetRevision: main
+        path: "core/{{appName}}"
+      destination:
+        server: https://kubernetes.default.svc
