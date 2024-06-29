@@ -5,20 +5,21 @@ metadata:
   namespace: openshift-gitops
 spec:
   resourceHealthChecks:
-  - argoproj.io/v1alpha1/Application:
-      health.lua: |
-        hs = {}
-        hs.status = "Progressing"
-        hs.message = ""
-        if obj.status ~= nil then
-          if obj.status.health ~= nil then
-            hs.status = obj.status.health.status
-            if obj.status.health.message ~= nil then
-              hs.message = obj.status.health.message
-            end
+  - group: argoproj.io/v1alpha1
+    kind: Application
+    check: |
+      hs = {}
+      hs.status = "Progressing"
+      hs.message = ""
+      if obj.status ~= nil then
+        if obj.status.health ~= nil then
+          hs.status = obj.status.health.status
+          if obj.status.health.message ~= nil then
+            hs.message = obj.status.health.message
           end
         end
-        return hs
+      end
+      return hs
   server:
     autoscale:
       enabled: false
