@@ -11,6 +11,7 @@ spec:
     - list:
         elements:
           - userId: user1
+          - userId: user2
   template:
     metadata:
       name: "{{.userId}}-ds-project"
