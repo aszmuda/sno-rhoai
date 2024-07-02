@@ -22,8 +22,7 @@ spec:
     route:
       enabled: true
       tls:
-        termination: reencrypt
-        insecureEdgeTerminationPolicy: Redirect
+        termination: passthrough
     service:
       type: ''
   grafana:
