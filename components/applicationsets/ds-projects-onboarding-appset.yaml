@@ -37,3 +37,5 @@ spec:
         path: ds-projects-onboarding
         repoURL: 'https://github.com/aszmuda/sno-rhoai' # <7>
         targetRevision: main
+      destination:
+        server: https://kubernetes.default.svc
