@@ -1,0 +1,5 @@
+apiVersion: v2
+name: ds-projects-onboarding
+description: Chart for deploying data science project/namespaces and their dependencies.
+version: 0.0.1
+appVersion: 0.0.1
