@@ -5,5 +5,5 @@ commonAnnotations:
   argocd.argoproj.io/sync-options: SkipDryRunOnMissingResource=true
 
 resources:
-  - operator/overlays/alpha
-  - cluster
+  - operator/overlays/stable
+  - cluster/overlays/certs
