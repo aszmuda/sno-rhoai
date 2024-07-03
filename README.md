@@ -7,23 +7,9 @@ until oc apply -k https://github.com/aszmuda/sno-rhoai/bootstrap/overlays/defaul
 ```
 
 ### Adding a self-signed custom CA bundle that is separate from the cluster-wide bundle
-1. Create a patch file called `odh-custom-ca-bundle-patch.yaml` with the following content:
-```yaml
-spec:
-  trustedCABundle:
-    managementState: Managed
-    customCABundle: |
-      -----BEGIN CERTIFICATE-----
-      ...
-      -----END CERTIFICATE-----
-```
-> Please replace the content between the `BEGIN CERTIFICATE` and `END CERTIFICATE` with valid certificate
->
-2. Run the following command
-```bash
-oc patch DSCInitialization default-dsci --type merge --patch-file {{ path to file }}/custom-ca-bundle-patch.yaml
-```
-> Don't forget to replace `{{ path to file }}` in the above command with a valid file path to your patch file.
+1. Edit the `/core/rhoai/cluster/overlays/certs/custom-ca-bundle-patch` file and add your CA certs.
+   > Replace `customCABundle` value with valid PEM certificate(s).
+
 
 ### Notes:
 1. If RHOAI reports errors related to Service Mesh Control Plane readiness, delete the ServiceMeshControlPlane resource and wait a few minutes until RHOAI recreates it.
