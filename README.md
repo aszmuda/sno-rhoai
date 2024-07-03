@@ -21,7 +21,7 @@ spec:
 >
 2. Run the following command
 ```bash
-oc patch DSCInitialization default-dsci --type merge --patch-file {{ path to file }}/odh-custom-ca-bundle-patch.yaml
+oc patch DSCInitialization default-dsci --type merge --patch-file {{ path to file }}/custom-ca-bundle-patch.yaml
 ```
 > Don't forget to replace `{{ path to file }}` in the above command with a valid file path to your patch file.
 
