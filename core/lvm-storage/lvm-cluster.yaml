@@ -15,3 +15,10 @@ spec:
           overprovisionRatio: 10
         default: true
         name: vgsno
+        nodeSelector: # Determines the nodes on which to create the lvm volume group. If empty, all nodes are considered.
+          nodeSelectorTerms: #A list of node selector requirements
+            - matchExpressions:
+                - key: kubernetes.io/hostname
+                  operator: In
+                  values:
+                    - sno
