@@ -19,6 +19,6 @@ spec:
           nodeSelectorTerms: #A list of node selector requirements
             - matchExpressions:
                 - key: kubernetes.io/hostname
-                  operator: In
+                  operator: NotIn
                   values:
                     - sno-worker
